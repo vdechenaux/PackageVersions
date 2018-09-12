@@ -1,5 +1,5 @@
 {
-    "name": "ocramius/package-versions",
+    "name": "vdechenaux/package-versions",
     "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
     "type": "composer-plugin",
     "license": "MIT",
@@ -38,5 +38,8 @@
     "scripts": {
         "post-update-cmd":  "PackageVersions\\Installer::dumpVersionsClass",
         "post-install-cmd": "PackageVersions\\Installer::dumpVersionsClass"
+    },
+    "replace": {
+        "ocramius/package-versions": "^1.0"
     }
 }
